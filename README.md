@@ -1,0 +1,3 @@
+# Códigos y simulaciones de la asignatura "Redes Neuronales y Complejas" de la UNED
+
+To be continued... 
