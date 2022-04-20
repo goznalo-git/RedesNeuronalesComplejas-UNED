@@ -14799,6 +14799,8 @@ where $M$ is the number of patterns to store. In our case we want a single patte
             <span class="n">text</span> <span class="o">+=</span> <span class="s1">&#39;-&#39;</span>
         <span class="k">elif</span> <span class="n">num</span> <span class="o">==</span> <span class="o">+</span><span class="mi">1</span><span class="p">:</span>
             <span class="n">text</span> <span class="o">+=</span> <span class="s1">&#39;#&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">text</span> <span class="o">+=</span> <span class="s1">&#39;0&#39;</span>
             
         <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">L</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -15040,13 +15042,13 @@ where $M$ is the number of patterns to store. In our case we want a single patte
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([ 0,  0, -2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -2,  0,  0,  0,
-        0,  0,  0,  2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -2,  0,
-        0, -2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
-        0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  2,  0,  0,  0,  0,  0,  2,
-        0,  0,  0,  0,  0,  0,  0,  2, -2,  0,  0,  0,  0,  0,  0,  0,  0,
+<pre>array([ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -2,  0,  0,  0,  0,
+        0,  0,  0,  0, -2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
         0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -2,  0,  0,  0,  0,  0,  0,
-        0,  0,  0,  0,  0,  0, -2,  0,  0,  0,  0,  0,  0,  0,  0])</pre>
+        0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  2,  2,  0,  0,  0,  0,  2,
+        0,  0,  0,  0,  0,  0,  2,  0,  0, -2,  0,  0,  0,  2,  0,  0,  0,
+        0,  0,  2,  0, -2,  0,  0,  0,  0,  0,  0,  0, -2,  0,  0,  0,  0,
+        0,  0,  0,  0,  0,  0,  0,  0, -2,  0,  0,  0,  0,  0,  0])</pre>
 </div>
 
 </div>
@@ -15088,13 +15090,13 @@ where $M$ is the number of patterns to store. In our case we want a single patte
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([-2, -2,  0,  0, -2,  0,  0, -2,  0, -2, -2, -2,  0, -2, -2,  0, -2,
-        0,  0,  0,  0,  0, -2, -2, -2, -2, -2,  0, -2, -2,  2,  0, -2,  2,
-        0, -2, -2,  0,  0,  0,  0, -2,  2,  0,  0,  0, -2,  0,  0,  0,  0,
-        0,  0, -2,  2,  0, -2,  0,  0, -2,  0,  2,  2, -2, -2, -2,  0,  2,
-        2,  2,  2,  2,  2,  2,  2,  2,  0, -2,  0, -2,  2,  2, -2, -2,  0,
-       -2,  0,  2,  2,  0, -2, -2, -2,  2,  2, -2, -2,  0,  0,  0,  2,  2,
-       -2,  0, -2, -2,  0,  0,  0,  0, -2,  0, -2,  0,  0, -2, -2])</pre>
+<pre>array([ 0, -2,  0,  0,  0,  0, -2, -2,  0,  0, -2, -2, -2, -2, -2, -2,  0,
+        0,  2,  2,  0, -2,  0,  0, -2,  0, -2, -2,  0, -2,  0,  2, -2,  2,
+        2,  0, -2,  0, -2,  0, -2,  0,  0,  0,  0, -2,  0,  2,  2,  0,  0,
+       -2,  0, -2,  2,  2, -2, -2,  0,  0,  0,  2,  2, -2, -2, -2, -2,  0,
+        0,  0,  2,  2,  2,  2,  0,  0,  0, -2, -2, -2,  0,  0, -2,  0,  0,
+        0,  0,  0,  0, -2,  0, -2,  0,  2,  0,  0, -2, -2,  0,  0,  0,  2,
+        0,  0, -2, -2, -2,  0, -2,  0,  0, -2,  0, -2,  0,  0, -2])</pre>
 </div>
 
 </div>
@@ -15136,12 +15138,12 @@ where $M$ is the number of patterns to store. In our case we want a single patte
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([-2, -2, -2, -2, -2,  0, -2, -2, -2, -2, -2, -2,  0, -2, -2, -2, -2,
-       -2,  2,  2,  2, -2, -2, -2, -2,  0, -2, -2, -2, -2,  2,  2, -2,  2,
-        2, -2,  0, -2, -2, -2, -2, -2,  2,  2,  0, -2, -2,  2,  2, -2, -2,
-       -2, -2, -2,  0,  2, -2,  0, -2, -2, -2,  2,  2, -2, -2, -2, -2,  2,
-        2,  2,  2,  2,  2,  2,  2,  2, -2, -2, -2, -2,  2,  2, -2, -2, -2,
-       -2, -2,  2,  2, -2, -2, -2, -2,  2,  2, -2, -2,  0, -2, -2,  2,  2,
+<pre>array([-2, -2, -2, -2,  0, -2, -2, -2, -2,  0, -2, -2, -2, -2, -2, -2, -2,
+       -2,  2,  2,  2, -2, -2,  0, -2, -2, -2, -2, -2, -2,  2,  2, -2,  2,
+        2, -2, -2, -2, -2, -2, -2, -2,  2,  2, -2, -2,  0,  2,  2, -2,  0,
+       -2, -2, -2,  0,  2,  0, -2, -2, -2, -2,  2,  2, -2, -2, -2, -2,  2,
+        2,  2,  2,  2,  2,  0,  2,  2, -2,  0, -2, -2,  2,  2, -2,  0, -2,
+       -2, -2,  0,  2, -2, -2, -2, -2,  2,  2, -2, -2, -2, -2, -2,  0,  2,
        -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2])</pre>
 </div>
 
@@ -15163,22 +15165,6 @@ where $M$ is the number of patterns to store. In our case we want a single patte
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15424,13 +15410,13 @@ where $M$ is the number of patterns to store. In our case we want a single patte
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Text = pattern
 Text = reverse pattern
+Text = pattern
+Text = pattern
+Text = pattern
 Text = reverse pattern
 Text = reverse pattern
-Text = reverse pattern
-Text = reverse pattern
-Text = reverse pattern
-Text = reverse pattern
-Text = reverse pattern
+Text = pattern
+Text = pattern
 Text = reverse pattern
 </pre>
 </div>
@@ -15490,6 +15476,50 @@ Text = reverse pattern
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>To have a clear understanding of how the capacity is being affected, we will put many outputs side by side with the following function.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">H</span><span class="o">=</span><span class="mi">9</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Concatenate the output of several diluted networks with random inputs&#39;&#39;&#39;</span>
+    
+    <span class="n">pat</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">H</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
+        <span class="n">text_split</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">H</span><span class="p">):</span>
+            <span class="n">pat</span><span class="p">[</span><span class="n">line</span><span class="p">]</span> <span class="o">+=</span> <span class="s1">&#39;|&#39;</span>
+            <span class="n">pat</span><span class="p">[</span><span class="n">line</span><span class="p">]</span> <span class="o">+=</span> <span class="n">text_split</span><span class="p">[</span><span class="n">line</span><span class="p">]</span>
+        
+        <span class="n">totaltext</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">totaltext</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Weak-dilution,-scrambled-arrays:">Weak dilution, scrambled arrays:<a class="anchor-link" href="#Weak-dilution,-scrambled-arrays:">&#182;</a></h4>
 </div>
 </div>
@@ -15499,63 +15529,11 @@ Text = reverse pattern
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s1</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-------------
------###-----
-----##-##----
----##---##---
---##-----##--
---#########--
---##-----##--
---##-----##--
--------------
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s5</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15577,15 +15555,15 @@ Text = reverse pattern
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>#############
-#####---#####
-####--#--####
-###--###--###
-##--#####--##
-##---------##
-##--#####--##
-##--#####--##
-#############
+<pre>|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
+|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----
+|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----
+|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 </pre>
 </div>
 </div>
@@ -15602,10 +15580,8 @@ Text = reverse pattern
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s9</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
-
-<span class="n">pattern_rev</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pattern_rev</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15627,15 +15603,63 @@ Text = reverse pattern
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>#############
-#####---#####
-####--#--####
-###--###--###
-##--#####--##
-##---------##
-##--#####--##
-##--#####--##
-#############
+<pre>|-###-#--#----|#-#--#######-|##--#-0-##---|#-######-#--#|#######-#####|#---###-#-###|#--#--#######|-###--#--##-#|------#--#--#|#-#####-###-#
+|##-##---##-#-|#--###-###-##|###--#-#-#--#|#-##-##-#--#-|####-----##--|####0#-#-####|###-#-###-#--|#--##-0-####0|#-#-0--###-#0|#####--#--###
+|######--####-|-###--#--0###|-####-##----#|###--###-#--#|####--#-#-###|--#-#-#---##-|##-#-#--#-#--|#-##--#----##|-#######-####|####--####--#
+|##---####-##-|-##--#----##-|-##--###-####|-####-#---##-|#-##-##---#--|###--#---#0-#|###-#-###-###|#--#----#----|###---##--#--|--#-#--##---#
+|##----###--##|#---#-0----#-|###--#######-|#-##---##-###|-#-#######-#-|-##-#-##---##|##------#-#-#|#---##-##--##|#0-#-###-#-##|#-#-#0#-----#
+|##0#-#----##-|###-#--#---#-|--#----##-#-#|##---#-###---|#----#-#--##-|--##-#-#---#-|--#-#--###-##|-#-------#-#-|###-##-##-#-#|-#-----#---##
+|###-0-#--#-##|#-###--####--|###-##-#-----|-----####--##|-##-#-#-##-#-|0#--#-##---##|-#-#-##---#-#|######--#-###|#-#-####---#-|##--#-###--#-
+|----#-#-#-#-#|##--#-#-#####|##-##-###--#-|#-######--###|#-##---#-#-##|-#-#-##---##-|##---##----#-|#-#---#----##|----##-----##|--###-#--##-#
+|####-#-#--#-#|-##--###--##-|-########-###|#######-#-#-#|--#-#--###-#-|###---##-##-#|#--00-#--#0#-|#-#--#-######|#####-###--#-|----#####-#-#
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>|#############|#############|#############|#############|#############|#############|#############|#############|#############|#############
+|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####
+|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####
+|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|#############|#############|#############|#############|#############|#############|#############|#############|#############|#############
 </pre>
 </div>
 </div>
@@ -15660,63 +15684,11 @@ Text = reverse pattern
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s1</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-------------
------###-----
-----##-##----
----##---##---
---##-----##--
---#########--
---##-----##--
---##-----##--
--------------
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s5</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15738,15 +15710,15 @@ Text = reverse pattern
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>##-##########
-#####---#####
-#-##--#-####
-###--###--###
-##--#####--##
-##-------#-##
-##--#####--##
-##--#####--##
-#############
+<pre>|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
+|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----
+|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----
+|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--|--#########--
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 </pre>
 </div>
 </div>
@@ -15763,10 +15735,8 @@ Text = reverse pattern
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s9</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
-
-<span class="n">pattern_rev</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pattern_rev</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15788,15 +15758,63 @@ Text = reverse pattern
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>#############
-#####---#####
-####--#--####
-###--###--###
-##--#####--##
-##---------##
-##--#####--##
-##--#####--##
-#############
+<pre>|-#####-#0###-|####-##--#-#-|#####--##-#-0|#-###--##---#|#-#0#-##--#0-|#--#-###--###|#-#-##-----##|-#------#--#0|#--#-###-#-#0|#####---###-#
+|-######-#0#-#|-#######--#-#|--###--0----#|-#-####-##-#-|#--##-#-#-###|--##--#-##-##|--###-#-#-###|#---###-#####|#-###---##---|###--#-#-####
+|-###--#---###|--###-##-#-##|--#-#--#-#-##|-###-#-0####0|##---0----#--|#-#-###-##-##|######-#----#|-######0--#0-|##-#-##-#--##|-#--#-####--#
+|#-#--#-#-##--|--###0-##-###|0##0-#-#-#--#|-#0#--###--#-|##---#-##--##|---#-#---####|---####----#-|--#-####-#-##|--#-0##-###-#|--#---#-#0-#0
+|###---#-#---#|#----#----#--|###---##-#---|##-##-#-#-#--|#-#0#-#-##---|#--#-###-##-#|#----#-#0-###|####-####----|#-#---#-#-###|--#---#-##-#-
+|-####0-#---##|#---#-#-##--#|#-#-##--0--0#|--##0###---##|##-#--###--##|-0-##---##--#|--#--#-0##0#-|#-#--#------#|###-#------#-|###--##---###
+|--#-#--#---#-|#-###---#-#-#|###-#-##--###|-##---#####--|----#-0##-0--|--#-###--#-#-|#--###----###|---########0#|##--##--#---#|--#-#-###--0-
+|-#---###-#--#|-#-#-#######-|##-#0--#-#-#-|#####0#------|##--#--#--##-|##-0###-##--#|0#--#-##--##-|##--#-----###|-##---0##-#--|#---##---#---
+|##-###-0#-#--|-###-##-##---|#-#---###----|-#--##--##-##|#0--####-##-#|-##-#--####--|-#--#----#-##|--#--####----|#---#-----##-|-#####--##--#
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>|#############|#############|#############|#############|#############|#############|#############|#############|#############|#############
+|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####
+|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####
+|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|#############|#############|#############|#############|#############|#############|#############|#############|#############|#############
 </pre>
 </div>
 </div>
@@ -15821,63 +15839,11 @@ Text = reverse pattern
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s1</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-------------
------###-----
-----##-##----
----##---##---
---##-----##--
---#########--
---##-----##--
---##-----##--
--------------
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s5</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15899,15 +15865,15 @@ Text = reverse pattern
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>##-##--###
-#####-#######
-#####-#--#-##
-#---###--#
-##-##-#--##
-##------##
-#--#####-#-
-----#####--##
-########--##-
+<pre>|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
+|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----|-----###-----
+|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----|----##-##----
+|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---|---##---##---
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|--#########--|--#########--|--#########--|--#########--|--#######0#--|--#########--|--#########--|--#########--|--#########--|--#########--
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--|--##-----##--
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------
 </pre>
 </div>
 </div>
@@ -15924,10 +15890,8 @@ Text = reverse pattern
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_s9</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span>
-
-<span class="n">pattern_rev</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">pattern_rev</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15949,15 +15913,63 @@ Text = reverse pattern
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>#############
-#####---#####
-####--#--####
-###--###--###
-##--#####--##
-##---------##
-##--#####--##
-##--#####--##
-#############
+<pre>|-----#-#--#0-|#0#-0###-0#--|#-0###-#-#-0#|----#---0-#-#|##-###-#-#-#-|#--#00#0--##-|#-#--0--#----|####--#-0#-#-|--#--0#-#####|-0-#-#####--0
+|0--#--###-0--|#-#00###-#00#|##---0#-#-###|#-0##-#-#-0##|-----###--##-|--00-#-0--00#|#####---##-##|-##0#-#-#-#--|-0#-####-#-##|#-#0####--###
+|---0---#---0#|0-#000#0-####|-##--0-0-####|000#---#0-##-|#00-##0-0-#-#|###-0###-###-|-----#--#-0##|0-##0-###-##-|###-##------0|#-##-###--#--
+|0-#---#--#-#0|##0-##-##-#--|----#-00#--0-|0--#0--#--#--|#-##-####0--#|#-#-0#00#-#-0|-0#-###0-----|-0##--#--####|-#---#--##-#-|####0---0#--#
+|###-#-#-----#|0--0#-----0-#|#--#--#--##-#|###########--|--##-###---#-|0#-#-00#--##0|#-##-####-###|#-#0-#---#-##|#-#--####-##0|#-#-#-#-#-#-#
+|#----####-###|0--###------0|-#----#-#0-#-|#---#--##-##-|##-##0#0-##0-|-#--#-#--##0#|-#-#-0#---#--|-##0##-0---#0|#--#-###--#-#|#-0--####---#
+|#-###0#-0##-0|#--0--##-#-##|#----#-0----0|----0###---0#|-0-#--##--0#0|---##-#-#-#-0|##0#0--#--0-0|-#--#####-##-|0#-###--0#-##|-#-#-0-#####-
+|##-0---#####-|--#-#0##-####|#-###--#0#-0#|--00##-0--##-|-###-#--0#-0#|---#--##--#-#|-0--#00-##00#|0---##-###0#-|0#0#-----0##-|-##---#-0-#--
+|#-0###--#--##|-#0###--#-0--|#0#0--00---#-|#####-#---0#-|#-###-###---#|#--#0-0##--#0|0#-#--0-###0#|##0------#-#0|#--#0--##-#0-|#0-#0-----#--
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">totaltext</span> <span class="o">=</span> <span class="n">concatenate_scrambled_diluted</span><span class="p">(</span><span class="n">xi_s9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">totaltext</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>|#############|#############|#############|#############|#############|#############|#############|#############|#############|#############
+|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####|#####---#####
+|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####|####--#--####
+|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###|###--###--###
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##---------##|##-------0-##|##---------##
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##|##--#####--##
+|#############|#############|#############|#############|#############|#############|#############|#############|#############|#############
 </pre>
 </div>
 </div>
@@ -15973,61 +15985,12 @@ Text = reverse pattern
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Medium-dilution,-random-arrays:">Medium dilution, random arrays:<a class="anchor-link" href="#Medium-dilution,-random-arrays:">&#182;</a></h4>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_r1</span> <span class="o">=</span> <span class="n">random_input</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
-<span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_r1</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<p>It should be noted that in the 0.5 cases, the addition of zeros in the weights results in inconclusive sign(x) functions, which are not translated to a - or # character, but to a 0 character.</p>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">))</span>
-</pre></div>
-
-     </div>
 </div>
 </div>
 </div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-#--#--#----#
---#-###--##-
-#-###---#-##
--###----#--##
-#-#--##-##-#-
----####-##---
-####-##-#-##
----#-##--#---
-##--##-----
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16035,10 +15998,29 @@ Text = reverse pattern
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_r1</span> <span class="o">=</span> <span class="n">random_input</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
-<span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_r1</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">concatenate_random_diluted</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">H</span><span class="o">=</span><span class="mi">9</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Concatenate the output of several diluted networks with random inputs&#39;&#39;&#39;</span>
+    
+    <span class="n">pat</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">H</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+        <span class="n">xi_r</span> <span class="o">=</span> <span class="n">random_input</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
+        <span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_r</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+        
+        <span class="n">text</span> <span class="o">=</span> <span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">)</span>
+        
+        <span class="n">text_split</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">H</span><span class="p">):</span>
+            <span class="n">pat</span><span class="p">[</span><span class="n">line</span><span class="p">]</span> <span class="o">+=</span> <span class="s1">&#39;|&#39;</span>
+            <span class="n">pat</span><span class="p">[</span><span class="n">line</span><span class="p">]</span> <span class="o">+=</span> <span class="n">text_split</span><span class="p">[</span><span class="n">line</span><span class="p">]</span>
+        
+        
+        
+        <span class="n">totaltext</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">totaltext</span>
+    
 </pre></div>
 
      </div>
@@ -16046,37 +16028,17 @@ Text = reverse pattern
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-------------
-----###-#---
-----##-##----
-----#---##---
---##-----##--
---#########--
---##----###-
---##-----##--
------#--#-#--
-</pre>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Weak-dilution,-random-arrays:">Weak dilution, random arrays:<a class="anchor-link" href="#Weak-dilution,-random-arrays:">&#182;</a></h4>
 </div>
 </div>
-
 </div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16085,10 +16047,8 @@ Text = reverse pattern
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xi_r1</span> <span class="o">=</span> <span class="n">random_input</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
-<span class="n">xi_new</span> <span class="o">=</span> <span class="n">Hopfield_diluted</span><span class="p">(</span><span class="n">xi_r1</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">decode_pattern</span><span class="p">(</span><span class="n">xi_new</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pat</span> <span class="o">=</span> <span class="n">concatenate_random_diluted</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16110,15 +16070,133 @@ Text = reverse pattern
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>--###-#-#-##-
---#---------
-#---#--##-##
----###----#-
---##--#--#-#
--##--##--##-#
--#-#---#--###
---##-#-#-----
---#-----#-#--
+<pre>|-------------|------#------|#############|#############|###-----0#-#-|#############|#############|#--##########|-####-#-###0-|-------------
+|-----#-#----#|##--####-#---|#####---#####|#####---#####|#-#-#-0#-----|#####---#####|#####---#####|##-#-##--####|#######-#####|-----###-----
+|----###0#----|----#--##----|##-#--#--####|####--#--####|-##-##--#----|####--#--####|####--#--####|##########-#-|####--#---###|----##-##----
+|---##---##---|---##----#---|###--###--###|###--###--###|-#-###--##---|###--###--###|###--###--###|0-##--##---##|-#-#-###--###|---##---##---
+|--0#-----##--|--#------##--|##--#####--##|##--#####--##|-######0--#--|##--#####--##|##--##-##--##|#0--####---##|#--####-#--##|--##-----##--
+|--###-#####--|--#########--|##---------##|##---------##|#-###--#-##--|##---------##|##---------##|-###-##--####|###-#-#---###|--#########--
+|-###-----##--|--###-0--##--|##--#####--##|##---####---#|-###-##-#-0--|##--#####--##|##--#####--##|#######-#-###|##--######-#-|--##-----##--
+|--###----##--|---#-----##-#|##--#####--##|##--#####--##|#------#-----|##--#####--##|##--#####--##|#----##-#----|###-######-#-|--##-----##--
+|-------------|----#--#--#0-|#############|#############|#---#-#-#----|#############|#############|-####-###--##|-############|-------------
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Medium-dilution,-random-array:">Medium dilution, random array:<a class="anchor-link" href="#Medium-dilution,-random-array:">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pat</span> <span class="o">=</span> <span class="n">concatenate_random_diluted</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>|0--###-#---##|-------------|#-#--###-###-|--#---------#|-------------|-------------|---0--0##-#--|-------------|##0###00-#0#-|0##--#-######
+|##0###-###---|-----###-----|###-#--####--|--#---##---#-|-#---###-----|-----###-----|--###-#######|-----###-----|######-######|###-#--###-##
+|#-###-#0-####|----##-##----|#-#-#--#####-|#--###--#--#-|----##-##----|-#-###-##----|-#-#-----#-#-|----##-##----|##-#---######|#####----#---
+|##---##0#0-#0|---##---##---|###--####-#-#|#--##-0-##0-#|---##--###---|---##---##---|##--#---0-0#-|---##---#----|#-#---#-#-###|--#0####--##-
+|-#-##----#---|--##-----##--|##-#-#####-##|####-#---#--#|--##-----##--|--##-----##0-|-##-0#---##-#|--##-----##--|----##----###|-#-###-##-##-
+|------##-##-#|--#########--|##--0-##-----|--#-#-###-#--|-#-0#0#####--|--##-######--|#-----##--##-|--#########--|#-#------#-#-|-###--#--#---
+|##0--##-#-#-#|--##-----##--|##---####--##|#--#-#-#-0#-#|--##-----##--|--##--#--#---|#0#-#--###--#|--##-----##--|###-#####--##|###-###0-#--#
+|###-#######-#|--##-----##--|###---##0-##-|---#--##--##-|--###----##-#|--##-#---##--|-#--#-0---0-#|--##-----##--|-#--#####--##|#-#-##-#--###
+|####-###--###|-------------|##-######-#--|#---#--#-#-#-|-------------|---------#---|-##-##0-#--##|-------------|#######--####|##-0###-##--0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Strong-dilution,-random-array:">Strong dilution, random array:<a class="anchor-link" href="#Strong-dilution,-random-array:">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pat</span> <span class="o">=</span> <span class="n">concatenate_random_diluted</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>|###-###0####-|-##-######-##|0-#----###---|--##----000##|#-0#----0----|0-######-#-##|-#-0#-0-##-#-|-0-#####-#-#-|-###-##-#-##-|#0####---##0-
+|--#---#--##-0|0#--#0#---###|-###-0##---##|-#-#0#0-##---|----###-#-00-|###0#-#-#-0##|-0-#-0#0#00#-|---##--0##0-#|##0##--#-----|#---0##0-#-#-
+|0-###-#0##-#0|#-##--###0###|#----####0##-|-##-####--#-0|#--#--#0#-#-0|00-----##--#0|#00#-0#---00-|--#--------##|---0----0###-|##--##0#00-0-
+|##---##---0##|-0##0-##---#0|-0-#0#-----#-|-0-##---##-##|-0-#--00#0---|###-0##-----#|0#--##-####-#|#00--0-------|-#--0#0-##-##|-#0-##-#-#--#
+|0###-0-##0--#|0--###-##--#0|##--#0---#-0-|-0-#-00-0##--|-0-#--##-##--|0#0-###--#---|--#-##-#-0--#|#---0###--0--|####-#0-#-#00|#-0####--#-##
+|0##-----0---#|#-----0---###|#----#-######|--##-##--##-#|-###-##-#-#0#|##-##-#-#---#|#0-#-#-##-###|-#---0#0----#|##----##---#0|0--##-0--#--#
+|#0-----0---##|#--#0#-#--###|-#####--#####|-00-###-####-|-####---###--|###-#--##0-##|#-0-#-#0###--|#0###0----0##|####---0-#---|#-----#0##--#
+|####-#-#0-#--|00--#--#-####|--#--##-#-#-#|###------##--|#0###0-0-0#0-|0##-##---##-#|#####-###0#-#|##--0#-#--#--|-------###--0|###0###------
+|00-#0-##--##-|##--#--#0##-#|#-##-###0##-#|#0##-##-0-##0|#-0#------##0|#-##-#--#---#|#-0-##-#----#|#0---#-##--0#|#-#------##-0|##-#-###0##-#
 </pre>
 </div>
 </div>
