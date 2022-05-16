@@ -7,18 +7,24 @@ Todas ellas las he llevado a cabo con Python (versión 3.5 mínimo) y Jupyter No
 
 ## Problema 2: Simulación del modelo Leaky Integrate-and-Fire
 
-Consiste en tres archivos y una carpeta:
+Carpeta LeakyIntegrateFire. Consiste en 9 archivos:
 - LeakyIntegrate-and-Fire.ipynb: hoja de Jupyter donde fui diseñando y testeando las funciones.
 - LIF.py: script que contiene las funciones para que las importe el script principal.
 - LeakyIntegrate-and-Fire.py: script principal, ejecutable, que genera las gráficas con los resultados.
-- Figures-LIF: carpeta que contiene las imágenes generadas.
+- El resto son 6 figuras en formato PNG, resultado del código.
 
 ## Problema 4: Simulación de redes asociativas de Hopfield para un patrón
 
-Consiste en dos archivos:
+Carpeta HopfieldHebb. Consiste en dos archivos:
 - Hopfield-Hebb.ipynb: hoja de Jupyter donde fui diseñando y escribiendo los resultados. Este problema es más una exposición de resultados que una simulación que ejecutar una y otra vez, por tanto no vi necesario generar un archivo ejecutable .py, los resultados son el mismo notebook. En cualquier caso, he exportado el notebook a formato HTML, visible en cualquier navegador, para facilidad de acceso.
 - Hopfield-Hebb.html: notebook exportado para abrir en navegador.
 
 
 ## Problema 7B: Entrenamiento de una red neuronal con un dataset real
 
+Carpeta Mushroom-NeuralNet. Consiste en varios archivos y carpetas:
+- README.md: breve descripción del dataset y sus campos.
+- 3 notebooks .ipynb: cada uno con uno de los pasos en el proceso de análisis de los datos, preprocesado y entrenamiento de la red neuronal
+- 3 archivos .html: exportados de los notebooks para abrir en navegador.
+- Data/: carpeta conteniendo el dataset en formato .csv, una explicación de cada atributo en attributes.txt, y los archivos intermedios resultado del preprocesado. 
+- Figures/: figuras obtenidas a lo largo de los notebooks.

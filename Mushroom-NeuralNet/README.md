@@ -3,7 +3,7 @@
 Dataset from https://www.kaggle.com/uciml/mushroom-classification
 
 ### Atribute information
-See file attributes.txt, for instance
+See file Data/attributes.txt, for instance
 
 1. cap-shape: bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s
 
