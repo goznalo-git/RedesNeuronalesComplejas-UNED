@@ -20,11 +20,22 @@ Carpeta HopfieldHebb. Consiste en dos archivos:
 - Hopfield-Hebb.html: notebook exportado para abrir en navegador.
 
 
-## Problema 7B: Entrenamiento de una red neuronal con un dataset real
+## Problemas 7B y 8: Entrenamiento de una red neuronal con un dataset real y análisis crítico de la velocidad de aprendizaje
 
 Carpeta Mushroom-NeuralNet. Consiste en varios archivos y carpetas:
 - README.md: breve descripción del dataset y sus campos.
-- 3 notebooks .ipynb: cada uno con uno de los pasos en el proceso de análisis de los datos, preprocesado y entrenamiento de la red neuronal
-- 3 archivos .html: exportados de los notebooks para abrir en navegador.
+- 4 notebooks .ipynb: cada uno con uno de los pasos en el proceso de análisis de los datos, preprocesado y entrenamiento de la red neuronal (problema 7b), y uno último que es una versión modificada del de entrenamiento, con el código para el entrenamiento manual y figuras de los gradientes por capa y epoch.
+- 4 archivos .html: exportados de los notebooks para abrir en navegador.
 - Data/: carpeta conteniendo el dataset en formato .csv, una explicación de cada atributo en attributes.txt, y los archivos intermedios resultado del preprocesado. 
-- Figures/: figuras obtenidas a lo largo de los notebooks.
+- Figures/: carpeta con las figuras obtenidas a lo largo de los notebooks.
+
+
+
+## Problema 9: Análisis de una red compleja real
+
+Carpeta ComplexNetwork. Consiste en varios archivos y carpetas:
+- ComplexNetworkAnalysis.ipynb: Notebook con todo el proceso, desde la carga del dataset, procesamiento para convertirlo en redes, y luego cálculo de propiedades.
+- ComplexNetworkAnalysis.html: exportado para abrir en el navegador.
+- CElegans_multiplex.pkl: red multicapa guardada con el módulo pickle para poder cargarse en un futuro
+- CElegans_Multiplex_Neuronal/: carpeta que contiene el dataset
+- Figures/: carpeta con las figuras obtenidas a lo largo del notebook
